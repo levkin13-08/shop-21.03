@@ -126,7 +126,7 @@ body {
 }
 
 .sales__item--woman {
-    background-image: url(/img/forWomen.jpg);
+    background-image: url(../img/forWomen.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,7 +138,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/img/forMan.png);
+    background-image: url(../img/forMan.png);
 }
 
 .sales__item--kids {
@@ -146,7 +146,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/img/forKids.png);
+    background-image: url(../img/forKids.png);
 }
 
 .sales__item--accesories {
@@ -156,7 +156,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(/img/accesories.jpg);
+    background-image: url(../img/accesories.jpg);
     background-repeat: no-repeat;
     margin-top: 30px;
     margin-bottom: 96px;
@@ -280,7 +280,7 @@ body {
     justify-content: center;
 }
 
-.footer_wrp {
+.footer__wrp {
     display: flex;
     justify-content: space-between;
     align-items: center;
