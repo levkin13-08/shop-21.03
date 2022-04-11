@@ -273,7 +273,6 @@ body {
 
 .products__item-wrp {
     position: relative;
-
 }
 
 .products_button-overlay {
@@ -294,8 +293,8 @@ body {
 .products_button-overlay:focus,
 .products_button-overlay:active {
     cursor: pointer;
-    background: rgba(0,0,0,0.2);
-	box-shadow: inset 0 0 0 1px #feffff;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 0 1px #feffff;
 }
 
 .products_button-title {
@@ -448,6 +447,101 @@ body {
     background-image: url(../img/subscribe.jpg);
 }
 
+.form__wrp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__content {
+    width: 360px;
+    text-align: center;
+    margin-top: 107px;
+}
+
+.form__content__img {
+    margin: auto;
+}
+
+.form__content__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+}
+
+.footer__send {
+    width: 557px;
+    margin-top: 150px;
+}
+
+.footer__send__form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.footer__send__form-email {
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    padding-right: 110px;
+    background: #E1E1E1;
+    border: none;
+    border-radius: 22px;
+
+}
+
+.footer__send__form-email::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    opacity: 0.67;
+}
+
+.footer__send__form-submit {
+    background: #F16D7F;
+    border-radius: 22px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 22px;
+    padding-right: 110px;
+    align-items: center;
+}
+
+.footer__send__title {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer__send__text {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .footer {
     background-color: #222224;
     min-height: 79px;
@@ -515,10 +609,11 @@ body {
     margin-top: 64px;
     margin-bottom: 96px;
 }
-/* Временно */
-.send__form  {
-   width: 850px;
+
+.send__form {
+    width: 60%;
 }
+
 .send__info-title {
     font-weight: 300;
     font-size: 24px;
@@ -558,4 +653,91 @@ body {
     left: -35px;
     background-image: url(../img/done.svg);
     background-repeat: no-repeat;
-  }
+}
+
+.send__form-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.send__info {
+    margin-left: 128px;
+}
+
+.send__form-text {
+    margin-top: 21px;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 17px;
+    padding-bottom: 13px;
+    border: 1px solid #A4A4A4;
+}
+
+.send__form-checkbox {
+    margin-top: 31px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-bottom: 33px;
+}
+
+.send__form-info {
+    margin-top: 15px;
+    margin-bottom: 39px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.send__form-button {
+    padding-left: 29px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-right: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F16D7F;
+    border: none;
+}
+
+.form-button-img {
+   margin-left: 20px;
+}
+
+.send__form-button:hover,
+.send__form-button:focus,
+.send__form-button:active {
+    background-color: #f18b99;
+    cursor: pointer;
+    border: none;
+}
+
+.footer__send__form-submit:hover,
+.footer__send__form-submit:focus,
+.footer__send__form-submit:active {
+    background-color: #f18b99;
+    cursor: pointer;
+    border: none;
+}
+
+.send__form-text:hover,
+.send__form-text:focus {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.footer__send__form-email:hover,
+.footer__send__form-email:focus {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.send__form-checkbox:hover,
+.send__form-checkbox:focus {
+    opacity: 0,7;
+    cursor: pointer;
+}
