@@ -2,17 +2,29 @@
     background-color: $black-bkg;
     min-height: 341px;
 
+    @include tablet {
+        min-height: 610px;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     &__item {
         width: 360px;
         height: 134px;
         margin-top: 103px;
+
+        @include tablet {
+            margin-top: 48px;
+        }
     }
     
     &__item-img {
@@ -26,6 +38,7 @@
         font-size: 19.96px;
         line-height: 24px;
         color: #FBFBFB;
+
     }
     
     &__item-text {

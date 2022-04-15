@@ -2,12 +2,24 @@
     &__wrp {
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            min-height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     &__content {
         width: 360px;
         text-align: center;
         margin-top: 107px;
+
+        @include tablet {
+            margin-top: 0;;
+        }
     }
     
     &__content__img {
@@ -21,5 +33,9 @@
         text-align: center;
         color: $black-bkg;
         margin-top: 30px;
+
+        @include tablet {
+            @include font (20px, 24px, 400)
+        }
     }
 }

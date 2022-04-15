@@ -1,4 +1,11 @@
 .subscribe {
     min-height: 448px;
     background-image: url(../img/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include tablet {
+        min-height: 510px;
+    }
 }
