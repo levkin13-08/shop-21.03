@@ -1,0 +1,25 @@
+.form {
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__content {
+        width: 360px;
+        text-align: center;
+        margin-top: 107px;
+    }
+    
+    &__content__img {
+        margin: auto;
+    }
+    
+    &__content__text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $black-bkg;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,126 @@
+.send {
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        margin-bottom: 96px;
+    }
+    
+    &__form {
+        width: 60%;
+    }
+    
+    &__info-title {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    
+    &__info-text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-top: 22px;
+    }
+    
+    &__info__list {
+        margin-top: 21px;
+    }
+    
+    &__info__item {
+        margin-top: 16px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        position: relative;
+        margin-left: 39px;
+    }
+    
+    &__info__item:before {
+        content: '';
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        top: 5px;
+        left: -35px;
+        background-image: url(../img/done.svg);
+        background-repeat: no-repeat;
+    }
+    
+    &__form-title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    
+    &__info {
+        margin-left: 128px;
+    }
+    
+    &__form-text {
+        margin-top: 21px;
+        width: 100%;
+        padding-top: 12px;
+        padding-left: 17px;
+        padding-bottom: 13px;
+        border: 1px solid #A4A4A4;
+    }
+    
+    &__form-checkbox {
+        margin-top: 31px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        margin-bottom: 33px;
+    }
+    
+    &__form-info {
+        margin-top: 15px;
+        margin-bottom: 39px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+    
+    &__form-button {
+        padding-left: 29px;
+        padding-top: 16px;
+        padding-bottom: 17px;
+        padding-right: 46px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #F16D7F;
+        border: none;
+    }
+    
+    .form-button-img {
+       margin-left: 20px;
+    }
+    
+    &__form-button:hover,
+    &__form-button:focus,
+    &__form-button:active {
+        background-color: $pink-text;
+        cursor: pointer;
+        border: none;
+    }
+    
+    &__form-text:hover,
+    &__form-text:focus {
+        opacity: 0.4;
+        cursor: pointer;
+    }
+    
+    &__form-checkbox:hover,
+    &__form-checkbox:focus {
+        opacity: 0,7;
+        cursor: pointer;
+    }
+}
