@@ -18,7 +18,7 @@
         }
 
         @include mobile {
-            width: 100%;
+            width: 357px;
         }
     
     }
@@ -88,6 +88,10 @@
         padding-left: 17px;
         padding-bottom: 13px;
         border: 1px solid #A4A4A4;
+
+        @include mobile {
+            width: 327px;
+        }
     }
     
     &__form-checkbox {

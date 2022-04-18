@@ -12,6 +12,13 @@
         @include tablet {
             margin-top: 48px;
         }
+
+        @include mobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 342px;
+        }
     }
     
     &__send__form {
@@ -19,7 +26,11 @@
     justify-content: center;
     border-radius: 60px;
     margin-top: 32px;
-    align-items: center
+    align-items: center;
+
+    @include mobile {
+        width: 342px;
+    }
     }
     
     &__send__form-email {
@@ -72,6 +83,10 @@
         @include tablet {
             @include font (18px, 27px, 700)
         }
+
+        @include mobile {
+            width: 271px;
+        }
     }
     
     &__send__text {
@@ -85,6 +100,10 @@
 
         @include tablet {
             @include font (18px, 29px, 400)
+        }
+
+        @include mobile {
+            width: 271px;
         }
     }
       

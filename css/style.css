@@ -662,7 +662,7 @@ body {
 
 @media (max-width: 767px) {
   .send__form {
-    width: 100%;
+    width: 357px;
   }
 }
 
@@ -733,6 +733,12 @@ body {
   padding-left: 17px;
   padding-bottom: 13px;
   border: 1px solid #A4A4A4;
+}
+
+@media (max-width: 767px) {
+  .send__form-text {
+    width: 327px;
+  }
 }
 
 .send__form-checkbox {
@@ -866,12 +872,27 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .footer__send {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 342px;
+  }
+}
+
 .footer__send__form {
   display: flex;
   justify-content: center;
   border-radius: 60px;
   margin-top: 32px;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .footer__send__form {
+    width: 342px;
+  }
 }
 
 .footer__send__form-email {
@@ -930,6 +951,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .footer__send__title {
+    width: 271px;
+  }
+}
+
 .footer__send__text {
   font-family: Lato;
   font-size: 18px;
@@ -946,6 +973,12 @@ body {
     line-height: 29px;
     font-weight: 400;
     font-style: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__send__text {
+    width: 271px;
   }
 }
 
