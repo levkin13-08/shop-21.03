@@ -98,8 +98,24 @@
         height: 581px;
         background: #F8F8F8;
         margin-bottom: 30px;
+
+        
+        @include mobile {
+            width: 100% ;
+            min-height: 580px;
+        }
     }
     
+    &__item-img {
+        @include mobile {
+            width: 360px;
+            object-fit: fill;
+            min-height: 418px;
+            width: 100%;
+            height: 420px;
+        }
+    }
+
     &__item-title {
         font-size: 13px;
         font-weight: 400;

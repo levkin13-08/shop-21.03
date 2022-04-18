@@ -21,3 +21,15 @@ body {
     width: 1px !important;
     overflow: hidden;
 }
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 92%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: 92%;
+    }
+}

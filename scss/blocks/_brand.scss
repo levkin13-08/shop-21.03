@@ -2,7 +2,7 @@
     display: flex;
 
     &__img {
-        width: 800px;
+        width: 50%;
         height: 765px;
     }
     
@@ -30,5 +30,49 @@
     
     &__title-pink {
         color: $pink-text;
+    }
+}
+
+@media (max-width:$tablet-mid-width) {
+    .brand {
+        &__img {
+            height: 100%;
+        }
+    }
+ }
+
+@media (max-width:$desktop-width) {
+   .brand {
+       &__img {
+            height: 100%;
+       }
+    
+        &__title {
+            @include font (44px, 52px, 900);
+        }
+        &__title-lower {
+            @include font (24px, 29px, 700)
+        }
+        &__title-wrp {
+            padding: 0 0 0 68px;
+        }
+   }
+}
+
+@media (max-width: $tablet-width) {
+    .brand {
+        &__img {
+            display: none;
+        }
+        &__title {
+            @include font (38px, 45px, 900);
+        }
+         &__title-wrp {
+            padding: 0 0 0 83px;
+            min-height: 363px;
+        }
+        &__title-lower {
+            @include font (20px, 24px, 700);
+        }
     }
 }
