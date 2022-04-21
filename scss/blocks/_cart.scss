@@ -1,0 +1,295 @@
+.cart {
+    &__wrp {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 96px;
+
+        @include tablet-mid {
+            flex-direction: column;
+            margin-bottom: 128px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+
+    &__form-title {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        text-transform: uppercase;
+        margin-top: 17px;
+    }
+
+    &__form-text {
+        width: 340px;
+        margin-top: 21px;
+        border: 1px solid #A4A4A4;
+        padding-top: 13px;
+        padding-left: 17px;
+        padding-bottom: 16px;
+
+        @include mobile {
+            width: 325px;
+        }
+    }
+
+    &__box-menu__list {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-left: 31px;
+        margin-top: 22px;
+        text-transform: uppercase;
+        width: 260px;
+
+        @include mobile {
+            @include font (16px, 19px, 400);
+            margin-top: 13px;
+        }
+    }
+
+    &__box-menu__item {
+        color: #575757;
+        margin-bottom: 6px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+
+        @include mobile {
+            @include font (14px, 16px, 400);
+        }
+    }
+
+    &__box-menu__item:first-child {
+        margin-top: 42px;
+
+        @include mobile {
+            margin-top: 26px;
+        }
+    }
+
+    &__box-price {
+        color: $pink-text;
+    }
+
+    &____form-text-city::placeholder {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    &__box-quantity {
+        margin-left: 25px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 3px;
+        border: 1px solid #EAEAEA;
+
+        @include mobile {
+            margin-left: 0px;
+            padding-left: 8px;
+            padding-right: 9px;
+            padding-bottom: 1px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        min-height: 306px;
+        flex-direction: column;
+
+        @include mobile {
+            width: 358px;
+            margin-bottom: 0;
+            height: 491px;
+        }
+    }
+
+    &__box-closed {
+        @include mobile {
+            margin-right: 17px;
+        }
+    }
+
+    &__box-tovar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        @include mobile {
+            width: 358px;
+            height: 188px;
+        }
+    }
+
+    &__box-button {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 129px;
+    }
+
+    &__box-button__clear {
+        @include font (14px, 17px, 300);
+        text-transform: uppercase;
+        border: 1px solid #A4A4A4;
+        padding-top: 16px;
+        padding-left: 38px;
+        padding-bottom: 16px;
+        padding-right: 39px;
+
+        @include mobile {
+            width: 140px;
+            @include font (12px, 14px, 400);
+            height: 12px;
+            padding-top: 9px;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    &__send {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet-mid {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            margin-top: 48px;
+        }
+    }
+
+    &__form__info {
+        margin-top: 58px;
+        background: #F5F3F3;
+        width: 360px;
+
+        @include tablet-mid {
+            margin-left: 30px;
+            margin-top: 37px;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            width: 340px;
+            margin-top: 49px;
+        }
+    }
+
+    &__form__info-sub {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 34px;
+        margin-top: 39px;
+    }
+
+    &__form__info-grand {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        text-transform: uppercase;
+        text-align: right;
+        margin-right: 34px;
+        margin-top: 12px;
+    }
+
+    &__form__info-hr {
+        background: #E2E2E2;
+        width: 275px;
+        margin-top: 21px;
+    }
+
+    &__form__info-button {
+        margin-top: 17px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background-color: #F16D7F;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 273px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+
+    &__form__info-button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    &__form__info-sub__span {
+        margin-left: 20px;
+    }
+
+    &__form__info-grand__span {
+        color: $pink-color;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+
+    &__box-button__clear:hover {
+        opacity: 0.4;
+        cursor: pointer;
+    }
+
+    &__box-closed {
+        margin-top: 28px;
+        margin-left: 57px;
+    }
+
+    &__form-button {
+        margin-top: 24px;
+        border: 1px solid #A4A4A4;
+        padding-top: 9px;
+        padding-left: 15px;
+        padding-bottom: 11px;
+        padding-right: 14px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        background-color: white;
+    }
+
+    &__form-button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    &__box-img {
+        height: 306px;
+
+        @include mobile {
+            height: 188px;
+            width: 143px;
+        }
+    }
+}

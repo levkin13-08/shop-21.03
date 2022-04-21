@@ -1,0 +1,32 @@
+.carousel {
+
+    &-inner {
+        background-color: #F7F7F7;;
+    }
+
+    &__img {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include mobile {
+           width: 320px; ;
+        }
+    }
+
+
+    &__icon {
+        font-size: 32px;
+        width: 47px;
+        height: 47px;
+        padding-top: 8px;
+        color: $pink-color;
+        background: rgba(42, 42, 42, 0.15);
+    }
+
+    &__icon-left {
+        color: #000000;
+    }
+}
+
+  
