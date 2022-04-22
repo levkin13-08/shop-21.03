@@ -1,0 +1,109 @@
+.collection {
+
+    &__wrp {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #EAEAEA;
+        margin-bottom: 129px;
+
+        @include mobile {
+            width: 326px;
+        }
+    }
+
+    &__title-pink {
+        @include font (14px, 17px, 300);
+        color: $pink-text;
+        text-transform: uppercase;
+        margin-top: 54px;
+    }
+
+    &__title-hr {
+        background: #db0b2b;
+        border: 3px solid #db0b2b;
+        width: 60px;
+        margin-top: 12px;
+    }
+
+    &__title {
+        @include font (18px, 23px, 300);
+        text-transform: 300;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include font (14px, 20px, 400);
+        text-align: center;
+        width: 590px;
+        margin-top: 48px;
+
+        @include mobile {
+            width: 326px;;
+        }
+    }
+
+    &__price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 32px;
+    }
+
+    &__price-hr {
+        width: 640px;
+        margin-bottom: 65px;
+        margin-top: 65px;
+
+        @include mobile {
+           width: 174px; ;
+        }
+    }
+
+    &__list {
+        text-transform: uppercase;
+        color: #000000;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+        margin-bottom: 49px;
+    }
+
+    &__button {
+        display: flex;
+        background-color: white;
+        border: 1px solid #FF6A6A;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    &__button:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    &__button-text {
+        margin-left: 23px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        padding-top: 16px;
+        padding-bottom: 0px;
+        padding-right: 56px;
+        margin-top: 5px;
+    }
+    &__button-img {
+        padding-top: 14px;
+        padding-left: 23px;
+    }
+
+    &__products {
+        @include tablet {
+            display: none;
+        }
+    }
+}
